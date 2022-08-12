@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
+using Models.Entities;
 
 #nullable disable
 
@@ -29,6 +30,8 @@ namespace Models.Models
         public virtual DbSet<Invoice> Invoices { get; set; }
         public virtual DbSet<Message> Messages { get; set; }
         public virtual DbSet<UserInfo> UserInfos { get; set; }
+        public virtual DbSet<UserPassword> UserPasswords { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

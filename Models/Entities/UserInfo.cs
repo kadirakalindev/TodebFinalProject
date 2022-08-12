@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -20,8 +21,8 @@ namespace Models.Models
         public string Email { get; set; }
         public string Phone { get; set; }
         public string CarInfo { get; set; }
-
-
+        public UserRole Role { get; set; }
+        public UserPassword Password { get; set; }
 
         public  ICollection<ApartmentInfo> ApartmentInfos { get; set; }
         public  ICollection<Message> Messages { get; set; }

@@ -18,7 +18,7 @@ namespace Business.Configuration.Validator.FluentValidation
             RuleFor(x => x.IdentityNumber).Matches(@"^\d+$");
             RuleFor(x => x.IdentityNumber).Length(11);
             RuleFor(x => x.Email).Length(1,60);
-            RuleFor(x => x.Email).EmailAddress();
+            RuleFor(x => x.Email).EmailAddress().NotEmpty();
             RuleFor(x => x.Phone).Length(10,20);
             RuleFor(x => x.Phone).Matches(@"^\d+$");
             RuleFor(x => x.CarInfo).Length(1, 20);

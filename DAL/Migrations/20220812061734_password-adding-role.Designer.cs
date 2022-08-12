@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Models.Models;
 
 namespace DAL.Migrations
 {
     [DbContext(typeof(TodebFinalDBContext))]
-    partial class TodebFinalDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220812061734_password-adding-role")]
+    partial class passwordaddingrole
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
