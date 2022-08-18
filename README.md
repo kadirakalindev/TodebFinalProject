@@ -3,5 +3,5 @@
 ## Projede Kullanılanlar
 *.Net Core,Mssql,MongoDb
 
-## Bitiremedim
+
   
